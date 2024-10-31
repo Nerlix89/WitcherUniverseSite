@@ -1,0 +1,469 @@
+:root
+{
+   --margin-sections-bottom: 60px;
+   --section-items-background-color: rgba(0, 0, 0, 0.88);
+   --section-flex-area-box-shadow: rgba(255, 255, 255, 0.927);
+}
+
+body{
+    font-family: HeadersFont;
+    background-image: url(images/Background/imjkslu7qjia1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    backdrop-filter: brightness(30%);
+    margin: 0;
+    padding: 0;
+}
+
+.header-main
+{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo-image
+{
+    border-bottom: 5px outset #ffffff;
+    padding-bottom: 10px;
+    margin-left: -10px;
+}
+
+.header-navigation-border
+{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+}
+
+.sections-describe-h2
+{
+    font-size: 27px;
+    color: #e6e5e5;
+}
+
+.header-background-video
+{
+    width: calc(100% - 300px);
+    border-left: 5px outset #a9a9a9;
+    object-fit: contain;
+}
+
+.header-h1
+{
+    font-family: HeadersFont;
+    font-size: 40px;
+    background-color: #ee0d0d;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 2px;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.navigation-elements
+{
+    color: #c9c7c7;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    padding: 25px 10px;
+    height: 25px;
+    text-decoration: none;
+    width: 70%;
+    margin: auto;
+}
+
+.navigation-elements:hover
+{
+    font-size: 18px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #ffffff;
+    color:#ffffff
+}
+
+.navigation-list-elements
+{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.world-and-races
+{
+    background-image: url(images/Background/WorldAndRacesBackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 3px outset #ffffff;
+    border-bottom: 4px outset #ffffff;
+    padding-top: 30px;
+    margin-bottom: var(--margin-sections-bottom, 80px);
+    justify-content: center;
+}
+
+.witchers
+{
+    background-image: url(images/Background/WitchersBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 3px outset #ffffff;
+    border-bottom: 4px outset #ffffff;
+    background-color: #000000;
+    padding-top: 30px;
+    margin-bottom: var(--margin-sections-bottom, 80px);
+    justify-content: center;
+}
+
+.mage-and-religions
+{
+    background-image: url(images/Background/MagicAndReligions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 3px outset #ffffff;
+    border-bottom: 4px outset #ffffff;
+    background-color: #000000;
+    padding-top: 30px;
+    margin-bottom: var(--margin-sections-bottom, 80px);
+    justify-content: center;
+}
+
+.section-h1
+{
+    border-style: solid;
+    border-color: #ffffff;
+    font-size: 25px;
+    background-color: var(--section-items-background-color);
+    margin: auto;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 50px;
+
+}
+
+.sections-descriptions-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-description
+{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+    text-align: center;
+
+}
+
+.section-description-h2
+{
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 180px;
+    margin: auto;
+    margin-bottom: -30px;
+}
+
+.section-description-p
+{
+    font-size: 17px;
+    margin: auto;
+    width: 80%;
+
+}
+
+.section-description-click-info
+{
+    color: dimgray;
+    font-size: 14px;
+    margin: auto;
+    width: 80%;
+}
+
+.section-flex-area
+{
+    margin: auto;
+    display: flex;
+    width: 40%;
+    border-style: solid;
+    border-color: #a8a7a7;
+    background-color: var(--section-items-background-color);
+    border-radius: 30px;
+    color:#ffffff;
+    margin-bottom: 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.section-flex-area:hover
+{
+    box-shadow: 0 0 30px var(--section-flex-area-box-shadow);
+    border-color: #ffffff;
+}
+
+.section-image
+{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.section-video
+{
+    width: 0;
+    height: 0;
+    object-fit: cover;
+}
+
+.world-description:hover .world-img
+{
+    width: 0;
+    height: 0;
+}
+
+.world-description:hover .world-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.races-description:hover .races-img
+{
+    width: 0;
+    height: 0;
+}
+
+.races-description:hover .races-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.witchers-description:hover .witchers-img
+{
+    width: 0;
+    height: 0;
+}
+
+.witchers-description:hover .witchers-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.monsters-description:hover .monsters-img
+{
+    width: 0;
+    height: 0;
+}
+
+.monsters-description:hover .monsters-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.mage-description:hover .mage-img
+{
+    width: 0;
+    height: 0;
+}
+
+.mage-description:hover .mage-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.religions-description:hover .religions-img
+{
+    width: 0;
+    height: 0;
+}
+
+.religions-description:hover .religions-video
+{
+    width: 250px;
+    height: 350px;
+}
+
+.official-witcher-sites-refs
+{
+    border-top: 3px outset #ffffff;
+    background-color: #000000;
+    padding-top: 30px;
+    margin-bottom: var(--margin-sections-bottom, 80px);
+    border-bottom: 4px outset #ffffff;
+}
+
+.cards-hover-info-text
+{
+    color: #b7b6b6;
+    font-size: 17px;
+    text-align: center;
+}
+
+.refs-cards
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.ref-card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 5px 4px 10px rgb(52, 52, 52);
+}
+
+.witcher1:hover
+{
+    box-shadow: 5px 4px 10px rgb(4, 6, 80);
+}
+
+.witcher2:hover
+{
+    box-shadow: 5px 4px 10px rgb(207, 145, 39);
+}
+
+.witcher3:hover
+{
+    box-shadow: 5px 4px 10px rgb(255, 255, 255);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ref-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ref-card-witcher-h2
+{
+    font-size: 20px;
+    margin-bottom: 160px;
+}
+
+.ref-card-p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ref-card-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-overlay button:hover {
+    background-color: #2d6c30;
+}
+
+.ref-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.support-footer
+{
+    border-top: 3px outset #ffffff;
+    background-color: #000000;
+    padding-top: 30px;
+}
+
+@font-face {
+    font-family: HeadersFont;
+    src: url(Fonts/PT_Serif/PTSerif-Bold.ttf);
+  }
+
+@media (max-width: 800px)
+{
+    .header-navigation-border
+    {
+        width: 100%;
+    }
+    .header-background-video
+    {
+        width: 0%;
+    }
+    .logo-image
+    {
+        border-bottom: initial;
+    }
+    .section-h1
+    {
+
+        border-style: none;
+    }
+
+}
+
+@media (max-width: 600px)
+{
+    .section-h1
+    {
+        border-style: none;
+    }
+
+}
+
+@media (max-width: 930px)
+{
+    .refs-cards
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .ref-card 
+    {
+        margin-bottom: 20px;
+    }
+
+}
+
