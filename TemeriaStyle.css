@@ -1,0 +1,350 @@
+:root
+{
+   --margin-sections-bottom: 60px;
+   --section-items-background-color: rgba(0, 0, 0, 0.88);
+}
+
+body
+{
+    font-family: HeadersFont;
+    background-image: url(images/World/WorldBackgroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    margin-bottom: 200px;
+}
+
+.header-background-video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-name-and-navigation
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    margin: 0;
+}
+
+.other-sites-navigation
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -55px;
+}
+
+.site-navigation-button
+{
+    font-size: 25px;
+    color: aliceblue;
+    padding: 15px 30px;
+    background-color: #000000d8;
+    cursor: pointer;
+
+}
+
+.header-h1
+{
+    font-family: HeadersFont;
+    font-size: 45px;
+    color: white;
+    padding: 25px;
+    background-color: #ee0d0d;
+    text-align: center;
+}
+
+.navigation-container {
+    margin-top: -30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-top: 3px outset #ffffff;
+    border-bottom: 5px outset #ffffff;
+}
+
+.navigation-list-elements
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0;
+    background-color: black;
+    width: 100%; 
+}
+
+.navigation-elements
+{
+    font-family: HeadersFont;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.home-element
+{
+    padding: 31px 20px;
+    border-radius: 0;
+    font-size: 35px; 
+    margin-left: auto;
+    border-left: 5px outset #ffffff;
+}
+
+.site-section
+{
+    background-color: #0d0101e7;
+    border-top: 3px outset #ffffff;
+    border-bottom: 4px outset #ffffff;
+    padding-top: 30px;
+    margin-bottom: var(--margin-sections-bottom, 80px);
+    justify-content: center;
+}
+.section-h1
+{
+    border-style: solid;
+    border-color: #ffffff;
+    font-size: 25px;
+    background-color: var(--section-items-background-color);
+    margin: auto;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 40%;
+    border-radius: 50px;
+}
+
+.flex-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text-content {
+    margin: 0 auto;
+    width: 67%;
+    font-family: GeneralFont;
+    color:aliceblue;
+    font-size: 23px;
+}
+
+.section-video {
+    margin-right: 25px;
+    margin-top: -10px;
+    width: 400px;
+    height: 652px;
+    flex-shrink: 0; 
+    order: 2; /* Перемещает видео справа */
+}
+
+.support-footer
+{
+    border-top: 3px outset #ffffff;
+    background-color: rgba(30, 30, 30, 1);
+    padding-top: 30px;
+}
+
+.support-cards
+{
+    margin: auto;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.support-card
+{
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.telegram
+{
+    --support-card-background-color: #0088cc;
+}
+
+.telegram:hover
+{
+    border-color: #0088cc;
+}
+
+.youtube
+{
+    --support-card-background-color: #cb1111f9;
+}
+
+.youtube:hover
+{
+    border-color: #cb1111f9;
+}
+
+.discord
+{
+    --support-card-background-color: #7289da;
+}
+
+.discord:hover
+{
+    border-color: #7289da;
+}
+
+.support-card:hover {
+    
+    transform: scale(1.05);
+    animation: fadeInBackground 0.4s ease forwards;
+    background-color: transparent;
+}
+
+.support-card:hover .support-card-button
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #000000;
+    border-style: solid;
+
+}
+
+.support-card-image
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.support-card-h3
+{
+    margin: auto;
+    width: 90%;
+    color:#ffffff;
+    padding: 5px 0;
+}
+
+.support-card-button
+{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.support-card-button:hover
+{
+    color: #000000;
+}
+
+@font-face {
+    font-family: HeadersFont;
+    src: url(Fonts/PT_Serif/PTSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: GeneralFont;
+    src: url(Fonts/Montserrat/static/Montserrat-Regular.ttf);
+  }
+
+  @keyframes fadeInBackground {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: var(--support-card-background-color) 
+    }
+}
+
+.fade-out-background {
+    animation: fadeOutBackground 0.4s forwards; 
+}
+
+@keyframes fadeOutBackground {
+    0% {
+        background-color: var(--support-card-background-color) 
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 1100px)
+{
+
+    .section-flex-area
+    {
+        width: 90%;
+    }
+
+    .support-cards
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .support-card
+    {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1300px)
+{
+
+    .text-content {
+
+        width: 50%;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 890px)
+{
+
+    .text-content {
+
+        width: 90%;
+    }
+
+    .section-video {
+        width: 0;
+        height: 0;
+    }
+
+    .section-h1
+    {
+        width: 80%;
+    }
+
+}
